@@ -1,0 +1,1 @@
+API_CLIENT_TOKEN = Rails.application.secrets.api_client_token

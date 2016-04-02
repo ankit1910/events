@@ -1,0 +1,17 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username:
+  password:
+  socket: /tmp/mysql.sock
+
+development:
+  <<: *default
+  database: events_development
+
+production:
+  <<: *default
+  database: events_production
+  username:
+  password:
